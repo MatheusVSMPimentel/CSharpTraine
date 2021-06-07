@@ -18,6 +18,7 @@ namespace HelloWorld
 		{
 		BancoTeste(); 
 		NotaFiscalCalculadora();
+		OperadorTernario();
 		}
 		
 		public static void NotaFiscalCalculadora(){
@@ -93,6 +94,13 @@ namespace HelloWorld
 		    Console.WriteLine("Você é milionário!"); 
 		    
 		  } 
+		}
+		
+		public static void OperadorTernario(){
+		string mensagem = "";
+		int valor = 15;  
+		mensagem = valor > 10 ?  "Maior que dez" :  "Maior que dez";
+		Console.WriteLine(mensagem);
 		}
 	}
 }
